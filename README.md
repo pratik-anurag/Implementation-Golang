@@ -1,2 +1,2 @@
 # commonfunctions
-repo contains handy functions definitions
+repo contains go lang implementations of common functions from other languages.
