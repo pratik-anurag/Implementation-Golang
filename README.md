@@ -8,3 +8,11 @@ Usage:
   arr := int[]{1, 2, 3}
   total, err := sum(arr)
 ```
+
+## enumerate(arr []interface{}) returns interface{}
+The enumerate function returns an array with paired elements from array with their index
+Usage:
+```
+fmt.Println(enumerate([]interface{"1.2","a"}))
+//output - [{0 1.2} {1 a}]
+```
