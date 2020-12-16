@@ -24,4 +24,12 @@ i,err := ParallelMap([]int{1,2,3}, func(num int) int { return num+1 }, reflect.T
 		fmt.Println(err)
 	}
 fmt.Println(i) //output - [2 3 4]
+
+
+## enumerate(arr []interface{}) returns interface{}
+The enumerate function returns an array with paired elements from array with their index
+Usage:
+```
+fmt.Println(enumerate([]interface{"1.2","a"}))
+//output - [{0 1.2} {1 a}]
 ```
