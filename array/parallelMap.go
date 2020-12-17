@@ -1,11 +1,11 @@
-package main
+package array
 
 import (
 	"errors"
-	"fmt"
 	"reflect"
 	"sync"
 )
+
 var (
 	ErrMapSourceNotArray   = errors.New("input value is not an array")
 	ErrMapTransformNil     = errors.New("transform function cannot be nil")
@@ -55,11 +55,11 @@ func ParallelMap(source interface{}, transform interface{}, T reflect.Type) (int
 	return result.Interface(), nil
 }
 
-func main(){
-	i,err := ParallelMap([]int{1,2,3}, func(num int) int { return num+1 }, reflect.TypeOf(1))
-	if err!= nil{
-		fmt.Println(err)
-	}
-	fmt.Println(i)
-
-}
+//func main(){
+//	i,err := ParallelMap([]int{1,2,3}, func(num int) int { return num+1 }, reflect.TypeOf(1))
+//	if err!= nil{
+//		fmt.Println(err)
+//	}
+//	fmt.Println(i)
+//
+//}
