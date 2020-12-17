@@ -10,7 +10,7 @@ Usage:
 ```
 ## ParallelMap(source interface{}, transform interface{}) (interface{}, error)
 ParallelMap is a simple implementation of Maps inspired by blog post:-
-```https://medium.com/better-programming/implementing-map-in-go-40c55d34dbb4```
+https://medium.com/better-programming/implementing-map-in-go-40c55d34dbb4
 The function takes three parameters:-
 1. Array
 2. Function to be implemented on array
